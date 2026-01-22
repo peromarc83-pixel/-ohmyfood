@@ -1,0 +1,257 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --color-tertiary: #99e2d0;
+  --background-color: #f5f5f5;
+  --font-family-logo: "Skrikhand", sans-serif;
+}
+
+/* >= 768px */
+@media (max-width: 768px) {
+  /* Code CSS... */
+
+  .main-conteneur {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /**header styles**/
+
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center; /* centre le logo */
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .menu-back {
+    position: absolute;
+    left: 0; /* bouton collé à gauche */
+    top: 50%;
+    transform: translateY(-50%); /* aligné verticalement au centre */
+  }
+
+  .menu-back a i {
+    font-size: 16px;
+    color: #353535;
+    margin: 17px;
+  }
+
+  .logo img {
+    height: 30px; /* à ajuster selon ton design */
+  }
+
+  .photo-plat img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: -60px;
+  }
+  /**titre principal et heart styles**/
+
+  .titre.principal {
+    display: flex;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 28px;
+    justify-content: space-between;
+    padding: 17px;
+  }
+  .heart {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #101010;
+  }
+
+  /**menu styles**/
+
+  .menu {
+    background-color: #f6f6f6;
+    border-radius: 40px;
+  }
+
+  h3 {
+    width: 40px;
+    border-bottom: 3px solid #99e2d0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .entrées,
+  .plats,
+  .desserts {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 40px;
+  }
+
+  .entrées {
+    opacity: 0;
+    animation: visualentrées 0.4s linear forwards;
+    animation-delay: 0.4s;
+  }
+
+  @keyframes visualentrées {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .plats {
+    opacity: 0;
+    animation: visualplats 0.8s linear forwards;
+    animation-delay: 0.8s;
+  }
+
+  @keyframes visualplats {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .desserts {
+    opacity: 0;
+    animation: visualdesserts 1.2s linear forwards;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes visualdesserts {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card-content {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+   
+    background-color: #ffffff;
+    box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+    margin-bottom: 10px;
+    padding: 12px;
+   
+  }
+ 
+
+  .card-text h4 {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .card-text p {
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+  }
+  .card-rating {
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+
+
+
+
+
+  .btn-commander {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .btn {
+    width: 186px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(
+      to top,
+      #9356dc,
+      #ff79da
+    ); /* Dégradé vertical */
+    color: #ffffff;
+  }
+
+  .btn:hover {
+    filter: brightness(1.3);
+    box-shadow: 0px 15px 15px 0px #00000060;
+  }
+  .commander {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-family-main);
+  }
+  /**footer styles**/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+    padding: 25px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 7px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-title {
+    font-family: Shrikhand;
+    margin-bottom: 15px;
+  }
+
+  li img {
+    margin-right: 8px;
+  }
+}
