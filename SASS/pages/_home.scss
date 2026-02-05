@@ -1,0 +1,56 @@
+// ====================
+// PAGE D'ACCUEIL
+// ====================
+
+main {
+  margin-top: $spacing-xl;
+}
+
+// ====================
+// SECTION FONCTIONNEMENT
+// ====================
+
+.choix {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: $spacing-xxs;
+  padding-right: $spacing-md;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding-left: $spacing-md;
+  padding-bottom: $spacing-xl;
+ 
+
+  h2 {
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    padding-bottom: $spacing-md;
+  }
+}
+
+// ====================
+// SECTION RESTAURANTS
+// ====================
+
+.restaurants {
+  background-color: $background-light;
+  padding-top: $spacing-lg;
+  padding-bottom: $spacing-xxl;
+}
+
+.restaurants-title {
+  padding-top: $spacing-md;
+  padding-bottom: $spacing-xxl;
+  padding-left: $spacing-md;
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xl;
+
+}

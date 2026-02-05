@@ -1,0 +1,43 @@
+// ====================
+// FOOTER
+// ====================
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-grey;
+  color: $white;
+  padding: $spacing-md 25px $spacing-md 25px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 11px;
+      height: 12px;
+      margin-right: 8px;
+    }
+  }
+
+  a.mail {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .footer-title {
+    margin-bottom: 15px;
+    font-family: $font-logo;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-large;
+  }
+}

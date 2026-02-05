@@ -1,0 +1,39 @@
+// ====================
+// MENU SECTIONS ANIMATIONS
+// ====================
+
+// Animation pour les entrées
+@keyframes visualentrées {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation pour les plats
+@keyframes visualplats {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation pour les desserts
+@keyframes visualdesserts {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

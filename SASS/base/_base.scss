@@ -1,0 +1,23 @@
+// ====================
+// GLOBAL STYLES
+// ====================
+
+* {
+  font-family: $font-main;
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+  
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.main-conteneur {
+  display: flex;
+  flex-direction: column;
+}

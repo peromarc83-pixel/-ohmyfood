@@ -18,7 +18,7 @@
             integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
         <title>Ohmyfood</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sass/main.css">
     </head>
     <body>
         <div class="main-conteneur">
@@ -26,7 +26,7 @@
                 <div class="header-top">
                     <div class="logo"> <img
                             src="asset/images/logo/ohmyfood@2x.svg"
-                            alt="logo ohmyfood"></div>
+                            alt="logo ohmyfood" class="logo-accueil"></div>
                 </div>
                 <div class="header-bottom">
                     <div class="localisation">
@@ -54,16 +54,18 @@
                     <div class="choix">
                         <button class="btn-fonctionnement">
                             <i class="fa-solid fa-mobile-screen-button" id="fa-fonctionnement"></i>
-                            <h3 class="proposition">Choisissez un
-                                restaurant</h3></li>
-                        <button class="btn-fonctionnement"><i
-                                class="fa-solid fa-list-ul"  id="fa-fonctionnement"></i><h3
-                                class="proposition">Composez
-                                votre menu</h3></li>
-                        <button class="btn-fonctionnement"><i
-                                class="fa-solid fa-store"  id="fa-fonctionnement"></i><h3
+                            <p class="proposition">Choisissez un
+                                restaurant</p>
+                        </button>        
+                        <button class="btn-fonctionnement">
+                              <i class="fa-solid fa-list-ul"  id="fa-fonctionnement"></i>
+                              <p class="proposition">composez votre menu</p>
+                        </button>      
+                        <button class="btn-fonctionnement">
+                              <i class="fa-solid fa-store"  id="fa-fonctionnement"></i><p
                                 class="proposition">Dégustez
-                                au restaurant</h3></li>
+                                au restaurant</p>
+                        </button>         
                     </div>
                 </section>
                 <section class="restaurants">
@@ -73,29 +75,29 @@
                     <div class="restaurants-cards">
                         <div class="card">
                             <a href="page2.html">
-                                <article class="conteneur-image">
-                                    <img
-                                        src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                        alt="image d'un plat">
+                                   <div class="conteneur-image">
+                               <img src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat">
                                     <div class="badge">
-                                        <p>Nouveau</p>
+                                        <p class="badge-text">Nouveau</p>
                                     </div>
-                                </article>
-                                <div class="card-content">
+                                   </div>
+                                 <div class="card-content">
                                     <div class="card-text">
-                                        <h3 class="card-title">La palette du
-                                            goût</h3>
+                                        <article class="card-title">La palette du
+                                            goût</article>
                                         <p
                                             class="card-subtitle">Ménilmontant</p>
-                                    </div></a>
+                                    </div>
+                            
                                 <div class="card-rating">
-                                    <input type="checkbox" id="heart-checkbox" class="check">
-                                    <label for="heart-checkbox" class="checkbox">
+                                    <input type="checkbox" id="heart-checkbox-1" class="check">
+                                    <label for="heart-checkbox-1" class="checkbox">
                                         <i class="fa-regular fa-heart heart-empty"></i>
                                         <i class="fa-solid fa-heart heart-full"></i>                                      
                                     </label>
                                 </div>
                             </div>
+                                </a>
                         </div>
                         <div class="card">
                             <a href="page4.html">
@@ -109,13 +111,14 @@
                                 </article>
                                 <div class="card-content">
                                     <div class="card-text">
-                                        <h3 class="card-title">La note
-                                            enchantée</h3> <p
-                                            class="card-subtitle">Charonne</p>
-                                    </div> </a>
+                                        <article class="card-title">La note
+                                            enchantée</article>
+                                             <p class="card-subtitle">Charonne</p>
+                                    </div>
+                                 </a>
                                <div class="card-rating">
-                                    <input type="checkbox" id="heart-checkbox" class="check">
-                                    <label for="heart-checkbox" class="checkbox">
+                                    <input type="checkbox" id="heart-checkbox-2" class="check">
+                                    <label for="heart-checkbox-2" class="checkbox">
                                         <i class="fa-regular fa-heart heart-empty"></i>
                                         <i class="fa-solid fa-heart heart-full"></i>                                      
                                     </label>
@@ -124,39 +127,50 @@
                         </div>
                         <div class="card">
                             <a href="page5.html">
+                                 <article class="conteneur-image">
                                 <img
                                     src="asset/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="image d'un plat">
+                                 </article>
                                 <div class="card-content">
                                     <div class="card-text">
-                                        <h3 class="card-title">A la
-                                            française</h3>
+                                        <article class="card-title">A la
+                                            française</article>
                                         <p class="card-subtitle">Cité
                                             rouge</p>
                                     </div>
                                 </a>
-                                <div class="card-rating">
-                                    <i class="fa-regular fa-heart"></i>
+                                   <div class="card-rating">
+                                    <input type="checkbox" id="heart-checkbox-3" class="check">
+                                    <label for="heart-checkbox-3" class="checkbox">
+                                        <i class="fa-regular fa-heart heart-empty"></i>
+                                        <i class="fa-solid fa-heart heart-full"></i>                                      
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <a href="page3.html">
-
+                               <article class="conteneur-image">
                                 <img
                                     src="asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                     alt="image d'un plat">
+                                 </article>   
                                 <div class="card-content">
                                     <div class="card-text">
-                                        <h3 class="card-title">Le délice des
-                                            sens</h3>
+                                        <article class="card-title">Le délice des
+                                            sens</article>
                                         <p
                                             class="card-subtitle">Folie-Méricourt</p>
                                     </div>
                                 </a>
-                                <div class="card-rating">
-                                    <i class="fa-regular fa-heart"></i>
+                                 <div class="card-rating">
+                                    <input type="checkbox" id="heart-checkbox-4" class="check">
+                                    <label for="heart-checkbox-4" class="checkbox">
+                                        <i class="fa-regular fa-heart heart-empty"></i>
+                                        <i class="fa-solid fa-heart heart-full"></i>                                      
+                                    </label>
                                 </div>
                             </div>
 
@@ -183,4 +197,4 @@
             </footer>
         </div>
     </body>
-</html>
+</html> 

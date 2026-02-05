@@ -1,0 +1,200 @@
+// ====================
+// BUTTONS
+// ====================
+
+// Bouton principal 
+.btn {
+  width: 218px;
+  height: 50px;
+  @include flex-center;
+  border-radius: $border-radius-full;
+  border: none;
+  @include gradient-primary;
+  color: $white;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-xxl;
+  @include box-shadow-dark;
+  @include button-hover;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-family: $font-main;
+  }
+}
+
+// Bouton commander (page menu)
+.btn-commander {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $spacing-xl;
+
+  .btn {
+    width: 186px;
+  }
+}
+
+.explorer,
+.commander {
+  text-decoration: none;
+  color: $white;
+  font-family: $font-main;
+}
+
+// ====================
+// BOUTONS FONCTIONNEMENT
+// ====================
+
+.btn-fonctionnement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: $border-radius-md;
+  @include box-shadow-medium;
+  background-color: $background-light;
+  padding: $spacing-xs;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#fa-fonctionnement {
+  @include flex-center;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  color: $text-grey;
+  padding-left: 15px;
+
+  &:hover {
+    color: ($primary-color);
+  }
+}
+
+.proposition {
+  display: inline-block;
+  padding-right: 50px;
+  width: 100%;
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+}
+
+
+// ====================
+// BOUTONS MENU ITEMS
+// ====================
+
+.menu-item {
+  font-family: $font-main;
+  margin-bottom: $spacing-xs;
+  margin-top: $spacing-xs;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background: $background-light;
+    border-radius: 16px;
+    padding: 16px 20px 16px 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &__content {
+    flex: 1;
+    overflow: hidden;
+    margin-right:10px;
+    min-width: 0;
+    transition: margin-right 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+
+  &__text {  
+    font-size: $font-size-large;
+    font-weight: $font-weight-medium;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__info {  
+    font-size: $font-size-small;
+    font-weight: $font-weight-light;
+    margin-top: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+     }
+
+  &__price {
+    font-size: $font-size-price;
+    font-weight: 600;  
+    position: relative;
+    padding-right: 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+   
+  }
+
+  &__check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59px;
+    height: 100%;
+    background: #9eead5;
+    @include flex-center;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+  &::before {
+      content: "✓";
+      width: 32px;
+      height: 32px;
+      background: #ffffff;
+      color: #10b981;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+  }
+
+
+
+&__checkbox:checked + &__card {
+  .menu-item__content {
+    margin-right: 69px; // 59px (check) + 10px (marge) - libère l'espace pour le texte
+  }
+  
+  .menu-item__price {
+    transform: translateX(-59px); // déplace le prix exactement de la largeur du check
+  }
+  
+  .menu-item__check {
+    transform: translateX(0); // fait apparaître le check
+  }
+}
+
+ 
+}
+
+  
+  
+
+   

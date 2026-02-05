@@ -1,0 +1,32 @@
+// ====================
+// HEADER - PAGE MENU
+// ====================
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 0 10px 0;
+
+  .logo img {
+    height: 30px;
+      }
+
+   .logo-menu {
+   border-radius: 0;
+   }   
+}
+
+.menu-back {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  a i {
+    font-size: $font-size-base;
+    color: $dark-grey;
+    margin: 17px;
+  }
+}

@@ -1,0 +1,97 @@
+// ====================
+// PAGE MENU RESTAURANT
+// ====================
+
+// Photo du restaurant
+.photo-plat {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;  
+}
+
+.plats-restaurants {
+  border-radius: 0;
+}
+
+
+// ====================
+// TITRE & HEART
+// ====================
+
+.titre.principal {
+  display: flex;
+  font-family: $font-logo;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xxl;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+  margin: 0;
+ 
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: $text-dark;
+  cursor: pointer;
+}
+
+// ====================
+// MENU CONTAINER
+// ====================
+
+.menu {
+  background-color: $background-light;
+  border-radius: $border-radius-lg $border-radius-lg 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+// ====================
+// SECTIONS MENU
+// ====================
+.carte {
+  margin-top:-30px;
+  border-radius: $border-radius-lg $border-radius-lg 0 0;
+  background-color: $background-light;
+}
+
+h3 {
+  width: 40px;
+  border-bottom: 3px solid $tertiary-color;
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.entrées,
+.plats,
+.desserts {
+  padding-left: $spacing-sm;
+  padding-right: $spacing-sm;
+  margin-bottom: $spacing-xl;
+}
+
+// Animations d'apparition progressive
+.entrées {
+  opacity: 0;
+  animation: visualentrées 0.4s linear forwards;
+  animation-delay: 0.4s;
+}
+
+.plats {
+  opacity: 0;
+  animation: visualplats 0.8s linear forwards;
+  animation-delay: 0.8s;
+}
+
+.desserts {
+  opacity: 0;
+  animation: visualdesserts 1.2s linear forwards;
+  animation-delay: 1.2s;
+}

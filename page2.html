@@ -17,7 +17,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
             integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="style-page 2.css">
+        <link rel="stylesheet" href="sass/main.css">
         <title>la palette du goût</title>
     </head>
     <body>
@@ -31,120 +31,150 @@
 </article>
 <article class="logo">
              <img src="asset/images/logo/ohmyfood@2x.svg"
-                        alt="logo ohmyfood" > 
+                        alt="logo ohmyfood" class="logo-menu" > 
                     </article>    
              </div>
                
                     <div class="photo-plat"><img
                             src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="photo plat la palette du goût"></div>
+                            alt="photo plat la palette du goût" class="plats-restaurants"></div>
              </header>  
                
-                <main class="menu">
+                <main class="carte">
 
                     <div class="titre principal">La palette du goût
                     <div class=" heart"> <i
                             class="fa-regular fa-heart"></i></div>
                      </div>  
                     <section class="entrées">
-
-                        <div class="titre secondaire"></div>
+                                            
                             <h3>ENTRÉES</h3>
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4> Fricassée d'escargots</h4>
-                                    <p>Au piment d'Espelette </p>
-                                </div>
-                                <div class="card-rating">25<span
-                                        class="euro">€</span>
-                                </div>  
-                           
+                      
+
+<div class="menu-item">
+    <input type="checkbox" id="menu-1" class="menu-item__checkbox">
+    <label for="menu-1" class="menu-item__card">
+        <div class="menu-item__content">
+            <h4 class="menu-item__text">Fricassée d'escargots</h4>
+            <p class="menu-item__info">Au piment d'Espelette</p>
+        </div>
+       
+        <div class="menu-item__price">25€</div>
+     <div class="menu-item__check"></div>
+    </label>
+</div>
                         
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Foie gras de canard
+                            <div class="menu-item">
+                                 <input type="checkbox" id="menu-2" class="menu-item__checkbox">
+    <label for="menu-2" class="menu-item__card"> 
+        <div class="menu-item__content">
+                                    <h4 class="menu-item__text"> Foie gras de canard
                                         mi-cuit</h4>
-                                    <p class="card-subtitle"> Et ses copeaux de
+                                    <p class="menu-item__info"> Et ses copeaux de
                                         truffe noire</p>
                                 </div>
-                                <div class="card-rating">35<span
-                                        class="euro">€</span>
-                                </div>
-                            </button>
+                                <div class="menu-item__price">35€</div>
+                                  <div class="menu-item__check"></div>
+                            </label>
+      </div>
 
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Œuf au plat</h4>
-                                  <p class="card-subtitle"> Assaisonné à la truffe sur lit de caviar</p>
-                    </div>
-                                <div class="card-rating">20<span
-                                        class="euro">€</span>
-                      </div>
-                            </button>
+      <div class="menu-item">
+          <input type="checkbox" id="menu-3" class="menu-item__checkbox">
+    <label for="menu-3" class="menu-item__card">
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text"> Oeufs aux plats
+                                       </h4>
+                                    <p class="menu-item__info">Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <div class="menu-item__price">20€</div>
+                                  <div class="menu-item__check"></div>
+                            </label>
+      </div>
+
+                           
                         </section>
                         <section class="plats">
                    <div class="titre secondaire"></div>          
                             <h3>PLATS</h3>
- <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Filet de bœuf aux herbes</h4>
-                                    <p class="card-subtitle">Accompagné de sa ribambelle de légumes</p>
-                                </div>
-                                <div class="card-rating">40<span
-                                        class="euro">€</span>
-                                </div>
- </button>
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Parmentier de queue de bœuf</h4>
-                                    <p class="card-subtitle"> À la truffe noire sur sa purée de panais</p>
-                                </div>
-                                <div class="card-rating">35<span
-                                        class="euro">€</span>
-                                </div>
-                            </button>
+ <div class="menu-item">
+     <input type="checkbox" id="menu-4" class="menu-item__checkbox">
+    <label for="menu-4" class="menu-item__card">
 
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Filet de turbot</h4>
-                                    <p class="card-subtitle"> Aux agrumes</p>
+
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text">Filet de bœuf aux herbes</h4>
+                                    <p class="menu-item__info">Accompagné de sa ribambelle de légumes</p>
                                 </div>
-                                <div class="card-rating">44<span
-                                        class="euro">€</span>
+                                <div class="menu-item__price">40€                  
                                 </div>
-                            </button>
+                              <div class="menu-item__check"></div>
+    </label>
+</div>
+
+                            <div class="menu-item">
+                                    <input type="checkbox" id="menu-5" class="menu-item__checkbox">
+    <label for="menu-5" class="menu-item__card">
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text"> Parmentier de queue de bœuf</h4>
+                                    <p class="menu-item__info"> À la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <div class="menu-item__price">35€</div>
+                                  <div class="menu-item__check"></div>
+                            </label>
+      </div>
+      <div class="menu-item">
+          <input type="checkbox" id="menu-6" class="menu-item__checkbox">
+    <label for="menu-6" class="menu-item__card">
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text"> Filet de turbot</h4>
+                                    <p class="menu-item__info"> Aux agrumes</p>
+                                </div>                         
+                                    <div class="menu-item__price">44€
+                                </div>
+                                <div class="menu-item__check"></div>
+    </label>
+</div>
+
                         </section>
                         <section class="desserts">
                          <div class="titre secondaire"></div>    
                             <h3>DESSERTS</h3>
-<button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Paris-Brest</h4>
-                                    <p class="card-subtitle">Revisité</p>
-                                </div>
-                                <div class="card-rating">18<span
-                                        class="euro">€</span>
-                                </div>
-</button>
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Macaron au chocolat d'exception </h4>
-                                    <p class="card-subtitle"> Et glace à la vanille de Madagascar</p>
-                                </div>
-                                <div class="card-rating">22<span
-                                        class="euro">€</span>
-                                </div>
-                            </button>
+<div class="menu-item">
+        <input type="checkbox" id="menu-7" class="menu-item__checkbox">
+    <label for="menu-7" class="menu-item__card">
 
-                            <button class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Mousse au chocolat </h4>
-                                    <p class="card-subtitle">Au piment d'Espelette et à la truffe noire</p>
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text">Paris-Brest</h4>
+                                    <p class="menu-item__info">Revisité</p>
                                 </div>
-                                <div class="card-rating">23<span
-                                        class="euro">€</span>
+                                <div class="menu-item__price">18€</div>
+                                     <div class="menu-item__check"></div>
+    </label>
+</div>
+                            <div class="menu-item">
+                     <input type="checkbox" id="menu-8" class="menu-item__checkbox">
+    <label for="menu-8" class="menu-item__card">
+               
+                                <div class="menu-item__content">
+                                    <h4 class="menu-item__text"> Macaron au chocolat d'exception </h4>
+                                    <p class="menu-item__info"> Et glace à la vanille de Madagascar</p>
                                 </div>
-                            </button>
+                                <div class="menu-item__price">22€</div>
+                                     <div class="menu-item__check"></div>
+    </label>
+</div>
+
+                            <div class="menu-item">
+                                <input type="checkbox" id="menu-9" class="menu-item__checkbox">
+                                <label for="menu-9" class="menu-item__card">
+                                    <div class="menu-item__content">
+                                        <h4 class="menu-item__text"> Mousse au chocolat </h4>
+                                        <p class="menu-item__info">Au piment d'Espelette et à la truffe noire</p>
+                                    </div>
+                                    <div class="menu-item__price">23€</div>
+                                    <div class="menu-item__check"></div>
+                                </label>
+                             </div>                                                       
                         </section>
                         <section class="btn-commander">
                         <button class="btn">
@@ -165,7 +195,8 @@
                             alt="l'image représente une poignée de main">
                         Devenir partenaire</li>
                     <li> Mentions légales</li>
-                    <li> Contact</li>
+                    <li> <a href="mailto:contact@ohmyfood.fr"
+                            class="mail">Contact</a></li>
                 </ul>
 
 

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+// ==========================================
+// ARCHITECTURE SASS 
+// ==========================================
+
+
+// ====================
+// 1. UTILS
+// Variables, mixins, fonctions, animations
+// ====================
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/animations';
+
+
+// ====================
+// 3. BASE
+// Reset, typographie, styles de base
+// ====================
+@import 'base/base';
+@import 'base/typography';
+
+
+// ====================
+// 4. LAYOUT
+// Header, footer, navigation, etc.
+// ====================
+@import 'layout/header';
+@import 'layout/header-menu';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+
+// ====================
+// 5. COMPONENTS
+// Boutons, cartes, formulaires, etc.
+// ====================
+@import 'components/buttons';
+@import 'components/cards';
+
+
+
+// ====================
+// 6. PAGES
+// Styles spécifiques à chaque page
+// ====================
+@import 'pages/home';
+@import 'pages/menu';
+
+
+
+

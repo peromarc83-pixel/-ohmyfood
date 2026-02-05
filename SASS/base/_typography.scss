@@ -1,0 +1,30 @@
+// ====================
+// TYPOGRAPHY
+// ====================
+
+h1 {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xl;
+}
+
+h3 {
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $font-size-base;
+}
+
+p {
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

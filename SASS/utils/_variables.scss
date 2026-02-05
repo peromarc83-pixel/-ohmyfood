@@ -1,0 +1,62 @@
+// ====================
+// COLORS
+// ====================
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+
+$background-light: #f6f6f6;
+$background-grey: #eaeaea;
+
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #353535;
+$text-grey: #7e7e7e;
+$text-dark: #101010;
+$success-text: #008766;
+
+// ====================
+// FONTS
+// ====================
+$font-main: "Roboto", sans-serif;
+$font-logo: "Shrikhand", sans-serif;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-small: 14px;
+$font-size-price: 15px;
+$font-size-base: 16px;
+$font-size-medium: 17px;
+$font-size-large: 18px;
+$font-size-xl: 24px;
+$font-size-xxl: 28px;
+
+// ====================
+// SPACING
+// ====================
+$spacing-xxs: 0px;
+$spacing-xs: 10px;
+$spacing-sm: 12px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 50px;
+
+// ====================
+// BORDER RADIUS
+// ====================
+$border-radius-sm: 15px;
+$border-radius-md: 20px;
+$border-radius-lg: 40px;
+$border-radius-full: 50px;
+
+// ====================
+// TRANSITIONS
+// ====================
+$transition-base: all 0.3s ease;
+$transition-slow: all 0.8s ease;

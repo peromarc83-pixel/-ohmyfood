@@ -1,0 +1,23 @@
+// ====================
+// NAVIGATION & INFORMATIONS
+// ====================
+
+.informations {
+  @include flex-column-center;
+  background-color: $background-light;
+}
+
+.title-and-subtitle {
+  font-family: $font-main;
+  text-align: center;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: $spacing-md;
+
+  h1 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+  }
+
+ 
+}
