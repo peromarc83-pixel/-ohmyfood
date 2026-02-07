@@ -1,124 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <header>
-            <div class="header-top">
-                <div class="logo"><img src="asset/images/logo/ohmyfood@2x.svg"
-                        alt="logo ohmyfood"></div>
-                <div class="header-bottom">
-                    <div class="photo plat le délice des sens"><img
-                            src="asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="photo le délice des sens"></div>
-                </div>
-                <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="sass/main.css">
+        <title>Le délice des sens</title>
+    </head>
+    <body>
+          <div class="main-conteneur">
+        <header>
+            
+       
+        <div class="header">
+            <div class="menu-back">
+ <a href="index.html" ><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+<div class="logo">
+             <img src="asset/images/logo/ohmyfood@2x.svg"
+                        alt="logo ohmyfood" class="logo-menu" > 
+                    </div>
+               </div>
 
-                    <div class="titre principal">le délice des sens</div>
+                    <div class="photo-plat"><img
+                            src="asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="photo plat le délice des sens" class="plats-restaurants"></div>
+             </header>  
+               
+                <main class="carte">
+
+                    <div class="titre principal">Le délice des sens
                     <div class=" heart"> <i
                             class="fa-regular fa-heart"></i></div>
-                    <section class="les entrées">
-
-                        <div class="entrées">
+                     </div>  
+                    <section class="entrées">
+                                            
                             <h3>ENTRÉES</h3>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Tartare de thon</h4>
-                                    <p class="card-subtitle">Assaisonné au yuzu</p>
-                                </div>
-                                <div class="card-rating">25<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Bouchée de homard croustillant </h4>
-                                    <p class="card-subtitle">Et sa farandole de petits légumes</p>
-                                </div>
-                                <div class="card-rating">35<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+                      
 
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Velouté de cèpes </h4>
-                                    <p class="card-subtitle">Aux truffes</p>
-                                </div>
-                                <div class="card-rating">20<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+<div class="menu-item">
+    <input type="checkbox" id="menu-1" class="menu-item__checkbox">
+    <label for="menu-1" class="menu-item__card">
+        <span class="menu-item__content">
+            <span class="menu-item__text">Tartare de thon</span>
+            <span class="menu-item__info">Assaisonné au yuzu</span>
+        </span>
+       
+        <span class="menu-item__price">25€</span>
+     <span class="menu-item__check"></span>
+    </label>
+</div>
+                        
+                            <div class="menu-item">
+                                 <input type="checkbox" id="menu-2" class="menu-item__checkbox">
+    <label for="menu-2" class="menu-item__card"> 
+        <span class="menu-item__content">
+                                    <span class="menu-item__text">Bouchée de homard croustillant</span>
+                                    <span class="menu-item__info">Et sa farandole de petits légumes</span>
+                                </span>
+                                <span class="menu-item__price">35€</span>
+                                  <span class="menu-item__check"></span>
+                            </label>
+      </div>
+
+      <div class="menu-item">
+          <input type="checkbox" id="menu-3" class="menu-item__checkbox">
+    <label for="menu-3" class="menu-item__card">
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Poulet rôti aux herbes de Provence</span>
+                                    <span class="menu-item__info">Et sa crème de truffe</span>
+                                </span>
+                                <span class="menu-item__price">40€</span>
+                                  <span class="menu-item__check"></span>
+                            </label>
+      </div>
+
+                           
                         </section>
-                        <section class="les plats">
+                        <section class="plats">
+                   <div class="titre secondaire"></div>          
                             <h3>PLATS</h3>
- <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Poulet rôti aux herbes de Provence </h4>
-                                    <p class="card-subtitle">Et sa crème de truffe</p>
-                                </div>
-                                <div class="card-rating">40<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title"> Langouste rôtie </h4>
-                                    <p class="card-subtitle"> Et ses légumes de saison</p>
-                                </div>
-                                <div class="card-rating">35<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+ <div class="menu-item">
+     <input type="checkbox" id="menu-4" class="menu-item__checkbox">
+    <label for="menu-4" class="menu-item__card">
 
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Côte de bœuf Angus </h4>
-                                    <p class="card-subtitle">Et sa purée de panais</p>
-                                </div>
-                                <div class="card-rating">44<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Poulet rôti aux herbes de Provence</span>
+                                    <span class="menu-item__info">Et sa crème de truffe</span>
+                                </span>
+                                <span class="menu-item__price">40€                  
+                                </span>
+                              <span class="menu-item__check"></span>
+    </label>
+</div>
+
+                            <div class="menu-item">
+                                    <input type="checkbox" id="menu-5" class="menu-item__checkbox">
+    <label for="menu-5" class="menu-item__card">
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Langouste rôtie</span>
+                                    <span class="menu-item__info">Et ses légumes de saison</span>
+                                </span>
+                                <span class="menu-item__price">35€</span>
+                                  <span class="menu-item__check"></span>
+                            </label>
+      </div>
+      <div class="menu-item">
+          <input type="checkbox" id="menu-6" class="menu-item__checkbox">
+    <label for="menu-6" class="menu-item__card">
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Côte de bœuf Angus</span>
+                                    <span class="menu-item__info">Et sa purée de panais</span>
+                                </span>                         
+                                    <span class="menu-item__price">44€</span>
+                               
+                                <span class="menu-item__check"></span>
+    </label>
+</div>
+
                         </section>
-                        <section class="les desserts">
+                        <section class="desserts">
+                         <div class="titre secondaire"></div>    
                             <h3>DESSERTS</h3>
-<div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Farandole de desserts</h4>
-                                    <p class="card-subtitle">Du chef</p>
-                                </div>
-                                <div class="card-rating">18<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Crème brulée  </h4>
-                                    <p class="card-subtitle">Revisitée</p>
-                                </div>
-                                <div class="card-rating">22<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+<div class="menu-item">
+        <input type="checkbox" id="menu-7" class="menu-item__checkbox">
+    <label for="menu-7" class="menu-item__card">
 
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4 class="card-title">Tiramisu  </h4>
-                                    <p class="card-subtitle">À la noisette</p>
-                                </div>
-                                <div class="card-rating">23<span
-                                        class="euro">€</span>
-                                </div>
-                            </div>
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Farandole de desserts</span>
+                                    <span class="menu-item__info">Du chef</span>
+                                </span>
+                                <span class="menu-item__price">18€</span>
+                                     <span class="menu-item__check"></span>
+    </label>
+</div>
+                            <div class="menu-item">
+                     <input type="checkbox" id="menu-8" class="menu-item__checkbox">
+    <label for="menu-8" class="menu-item__card">
+               
+                                <span class="menu-item__content">
+                                    <span class="menu-item__text">Crème brûlée</span>
+                                    <span class="menu-item__info">Revisitée</span>
+                                </span>
+                                <span class="menu-item__price">22€</span>
+                                     <span class="menu-item__check"></span>
+    </label>
+</div>
+
+                            <div class="menu-item">
+                                <input type="checkbox" id="menu-9" class="menu-item__checkbox">
+                                <label for="menu-9" class="menu-item__card">
+                                    <span class="menu-item__content">
+                                        <span class="menu-item__text">Tiramisu</span>
+                                        <span class="menu-item__info">À la noisette</span>
+                                    </span>
+                                    <span class="menu-item__price">23€</span>
+                                     <span class="menu-item__check"></span>
+                                </label>
+                             </div>                                                       
                         </section>
-<div class="btn">
+                        <div class="btn-commander">
+                      
                     <a href="commander" class="commander">commander
                         </a>
+                      
                 </div>
+       </main>          
 <footer>
  <ul>
                     <li><div class="footer-title">Ohmyfood</div>
@@ -131,7 +192,8 @@
                             alt="l'image représente une poignée de main">
                         Devenir partenaire</li>
                     <li> Mentions légales</li>
-                    <li> Contact</li>
+                    <li> <a href="mailto:contact@ohmyfood.fr"
+                            class="mail">Contact</a></li>
                 </ul>
 
 
@@ -140,10 +202,7 @@
 
 </div>
 
-                    </main>
-                </div>
-            </header>
+                   
+              
         </body>
     </html>
-</body>
-</html>
