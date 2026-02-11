@@ -8,7 +8,6 @@
 }
 
 .header-top {
- 
   height: 63px;
   background-color: $background-light;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.43);
@@ -18,7 +17,6 @@
     margin-top: 20px;
     border-radius: 0;
   }
-
 }
 
 .header-bottom {
@@ -49,8 +47,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 5px;
-  padding: $spacing-xs $spacing-xxs $spacing-xs 60px;
+  gap: 17px;
+  padding:15px $spacing-xxs 15px 60px;
 }
 
 .form-input {
@@ -61,4 +59,11 @@
   border: none;
   background-color: $background-grey;
   font-family: $font-main;
+  
+  &::placeholder {
+    color: $dark-grey;
+  }
+
 }
+
+

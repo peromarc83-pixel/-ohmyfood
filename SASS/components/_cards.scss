@@ -7,24 +7,21 @@
   padding-right: $spacing-md;
   margin-bottom: 18px;
   cursor: pointer;
- }
+}
 
-
-  img {
-   
-    width: 100%;
-    height: 231px;
-    object-fit: cover;
-    border-radius: $border-radius-md $border-radius-md 0 0;
-  }
+img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+  border-radius: $border-radius-md $border-radius-md 0 0;
+}
 
 .conteneur-image {
   position: relative;
   width: 100%;
-  
- }
+}
 
-// Badge "Nouveau" 
+// Badge "Nouveau"
 
 .badge {
   position: absolute;
@@ -37,8 +34,6 @@
   font-weight: $font-weight-medium;
   font-size: $font-size-small;
   color: $success-text;
- 
-
 
   text {
     font-family: $font-main;
@@ -58,17 +53,14 @@
   background-color: $white;
   border-radius: 0 0 $border-radius-md $border-radius-md;
   @include box-shadow-light;
-   
 }
- 
-.card-text { 
+
+.card-text {
   font-family: $font-main;
   color: $black;
   line-height: 1.2;
   padding-left: $spacing-md;
   padding-bottom: $spacing-md;
- 
-
 }
 
 .card-title {
@@ -102,7 +94,11 @@ input.check {
   display: none;
 
   &:checked + .checkbox .heart-full {
-    background: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+    background: linear-gradient(
+      193.33deg,
+      $primary-color -11.44%,
+      $secondary-color 123.93%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

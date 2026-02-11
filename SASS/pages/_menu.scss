@@ -26,10 +26,9 @@
   font-size: $font-size-xxl;
   justify-content: space-between;
   align-items: center;
-  padding: 17px;
+  padding: 17px ;
   margin: 0;
- 
-}
+ }
 
 .heart {
   display: flex;
@@ -56,8 +55,8 @@
 .carte {
   margin-top:-30px;
   border-radius: $border-radius-lg $border-radius-lg 0 0;
-  background-color: $background-light;
-}
+  background-color: $background-light; 
+   }
 
 h3 {
   width: 40px;
@@ -74,7 +73,7 @@ h3 {
 .desserts {
   padding-left: $spacing-sm;
   padding-right: $spacing-sm;
-  margin-bottom: $spacing-xl;
+  margin-bottom: $spacing-md;
 }
 
 // Animations d'apparition progressive

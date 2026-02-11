@@ -24,7 +24,7 @@ main {
   flex-direction: column;
   background-color: $white;
   padding-left: $spacing-md;
-  padding-bottom: $spacing-xl;
+  padding-bottom: 70px;
  
 
   h2 {
@@ -47,7 +47,7 @@ main {
 
 .restaurants-title {
   padding-top: $spacing-md;
-  padding-bottom: $spacing-xxl;
+  padding-bottom: $spacing-md;
   padding-left: $spacing-md;
   font-family: $font-main;
   font-weight: $font-weight-bold;

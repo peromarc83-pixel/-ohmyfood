@@ -31,11 +31,11 @@
 // ====================
 
 @mixin box-shadow-light {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px 0px #0000001a;
 }
 
 @mixin box-shadow-medium {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px #00000026;
 }
 
 @mixin box-shadow-dark {
