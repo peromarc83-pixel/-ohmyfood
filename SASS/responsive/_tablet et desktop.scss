@@ -1,217 +1,355 @@
-/* Entre 768px et 1440px PAGE D'ACCUEIL*/
-@media (min-width: 768px) and (max-width: 1440px) {
-  /* Code CSS... */
 
-  //** HEADER - PAGE D'ACCUEIL **//
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* styles tablette */
 
-  .header-top {
-    width: 100%;
-    height: 96px;
-
-    .logo img {
-      width: 200px;
-      height: 34px;     
-    }
-  }
-
-  .header-bottom {
-    border-bottom: 0;
-    box-shadow: none;
-  }
-
-  //** LOCALISATION ***//
-
-  .localisation {
-    .form-input {
-      border: none;
-      outline: none;
-      background-color: transparent;
-      padding-left: 17px;
-    }
-  }
-
-// NAVIGATION ET INFORMATION //
-
-  .informations {
-   @include flex-column-center;
-    background-color: $background-light;
-  }
-
-  .title-and-subtitle h1 {
-    padding-bottom:$spacing-lg;
-    font-family: $font-main;
-    font-weight:$font-weight-bold;
-    font-size: 40px;
-    text-align: center;   
-  }
-
-  .description {
-    text-align: center;
-    width: 100%;
-    height: 46px;
-    font-size: $font-size-large;
-    font-weight: $font-weight-light;
-  }
-
- //**BLOC EXPLORER**//
-
- .explorer {
-   margin-bottom:$spacing-lg;
-  }
-
- //**BLOC FONCTIONNEMENT**//
-
-  .fonctionnement {
-    padding-left: 90px;
-    padding-right: 90px;  
-
-    & h2 {
-      margin-bottom: $spacing-xxs;
-      padding-left: $spacing-lg;     
-  }
-
-  & .choix {
-    margin-bottom: $spacing-xxs;
-  }
+.header-bottom {
+ border: 0;
+ box-shadow:none;
 }
 
-//**BLOC RESTAURANTS**//
 
-.restaurants-title {
-padding-top: $spacing-xxs;
+// ====================
+// BOUTONS FONCTIONNEMENT
+// ====================
+
+.btn-fonctionnement {
+  width:30%;
+  height: 72px;
+ }
+.choix {
+ margin-left:90px;
+ margin-right: 90px;
+}
+
+.fonctionnement h2 {
+ margin-left:  90px;
+ margin-right: 90px;
 }
 
 .restaurants {
-    width: 100%;
-    background-color: $background-light;
-    padding-top: $spacing-lg;
-    padding-bottom: $spacing-xxl;
-    padding-left: 90px;
-    padding-right: 90px;
-
-    &-cards {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-      gap: 25px $spacing-xxl;
-    }
-
-    &-title {
-      padding-bottom: 28px;
-    }
-  }
-
-  .card {
-    width: 400px;
-    width: calc(50% - 25px);
-
-    &-content {
-          background-color: $background-light;
-         }
-
-    &-text {     
-      font-weight: $font-weight-bold;
-      font-size: $font-size-large;    
-      padding-left: $spacing-xs;
-    }
-
-    &-title {
-      font-size: $font-size-medium;
-      margin-bottom: 0;
-    }
-  }
-
-  a {
-    text-decoration: none;  
-  }
-
-
-//**BOUTON FONCTIONNEMENT**//
-
-  .btn-fonctionnement {  
-    width: 30%;
-    height: 72px;
-  }
-
-  .choix {
-   @include flex-center;
-   margin-bottom: 25px;
-  }
- 
-  .proposition {
-    padding-right: 0;  
-  }
-
-    
-  /**FOOTER STYLES**/
-
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;   
-  }
-
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: $spacing-lg;
-    width: 661px;
-  }
-
-  li {   
-    gap: 7px;
-  }
-
-  .footer-title {
-    display: flex;
-    align-items: center;   
-    padding-right: $spacing-xl;
-  }
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
-// ====================
-// HEADER - PAGE MENU
-// ====================
-
-.header {
-  .logo img {
-    width: 200px;
-    height: 34px;
-  }
-}
-
-.plats-restaurants {
-  height: 383px;
+.card {
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
  }
 
-//** CARTE MENUS **//
+
+.restaurants-cards {
+  display: flex;
+  flex-wrap: wrap;   
+}
+// ====================
+// FOOTER
+// ====================
+
+footer {
+  padding: 0 $spacing-md 0 $spacing-md;
+  
+ .footer-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+   padding-top: 40px;
+
+  }
+
+  ul {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: $spacing-md;
+    padding-right: 193px;
+  
+  
+  }
+
+
+}
+
+// ====================
+// PAGE MENU RESTAURANT
+// ====================
+
+
+
 
 .carte {
-  display: block;
-  margin-top: $spacing-xxs;
   margin-left: 193px;
-  margin-right: 193px; 
+  margin-right: 193px;
 }
 
-@media (max-width: 768px) {
-  .carte.carte {  
-    margin-left: $spacing-md;
-    margin-right: $spacing-md;
-  }
+
+
 }
 
-.titre.principal {
+@media (min-width: 1024px) and (max-width: 1440px) {
+ 
+
+.header-bottom {
+ border: 0;
+ box-shadow:none;
+}
+
+
+// ====================
+// BOUTONS FONCTIONNEMENT
+// ====================
+
+.btn-fonctionnement {
+  width:30%;
+  height: 72px;
+ }
+.choix {
+ margin-left:180px;
+ margin-right: 180px;
+  padding-right: 0;
+ gap:40px;
+}
+
+.fonctionnement h2 {
+ margin-left:  180px;
+ margin-right: 180px;
+
+}
+
+.restaurants {
+  padding-left:180px;
+  padding-right: 180px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+ }
+
+
+.restaurants-cards {
+
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+   
 }
 
-.heart {
-  padding-left: $spacing-md;
+// ====================
+// FOOTER
+// ====================
+
+footer {
+  padding: 0 $spacing-md 0 $spacing-md;
+  
+ .footer-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+   padding-top: 40px;
+
+  }
+
+  ul {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: $spacing-md;
+    padding-right: 193px;
+  
+  
+  }
+
 }
 
-.btn-commander {
-  margin-bottom: 0;
+// ====================
+// PAGE MENU RESTAURANT
+// ====================
+
+
+
+
+.carte {
+  margin-left: 193px;
+  margin-right: 193px;
+}
+
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* desktop XL uniquement */
+
+.header-bottom {
+ border: 0;
+ box-shadow:none;
+}
+
+
+// ====================
+// BOUTONS FONCTIONNEMENT
+// ====================
+
+.btn-fonctionnement {
+  width:30%;
+  height: 72px;
+ }
+.choix {
+ margin-left:90px;
+ margin-right: 90px;
+}
+
+.fonctionnement h2 {
+ margin-left:  90px;
+ margin-right: 90px;
+}
+.restaurants {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+ }
+
+
+.restaurants-cards {
+
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+// ====================
+// FOOTER
+// ====================
+
+footer {
+  padding: 0 $spacing-md 0 $spacing-md;
+  
+ .footer-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+   padding-top: 40px;
+
+  }
+
+  ul {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: $spacing-md;
+    padding-right: 193px;
+  
+  
+  }
+
+}
+
+// ====================
+// PAGE MENU RESTAURANT
+// ====================
+
+
+
+
+.carte {
+  margin-left: 193px;
+  margin-right: 193px;
+}
+
+}
+@media (min-width: 1920px) {
+  /* ultra-wide, TV */
+
+.header-bottom {
+ border: 0;
+ box-shadow:none;
+}
+
+
+// ====================
+// BOUTONS FONCTIONNEMENT
+// ====================
+
+.btn-fonctionnement {
+  width:30%;
+  height: 72px;
+ }
+.choix {
+ display: flex;
+ justify-content: center;
+ margin-left:180px;
+ margin-right: 180px;
+ padding-right: 0;
+ gap:40px;
+}
+
+.fonctionnement h2 {
+ margin-left:  180px;
+ margin-right: 90px;
+}
+.restaurants {
+  padding-left:180px;
+  padding-right: 180px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+ }
+
+
+.restaurants-cards {
+
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+// ====================
+// FOOTER
+// ====================
+
+footer {
+  padding: 0 $spacing-md 0 $spacing-md;
+  
+ .footer-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+   padding-top: 40px;
+
+  }
+
+  ul {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: $spacing-md;
+    padding-right: 193px;
+  
+  
+  }
+
+}
+
+// ====================
+// PAGE MENU RESTAURANT
+// ====================
+
+
+
+
+.carte {
+  margin-left: 193px;
+  margin-right: 193px;
+}
+
+
 }
